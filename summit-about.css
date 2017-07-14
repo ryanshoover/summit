@@ -1,0 +1,367 @@
+body {
+    padding-top: 0px !important;
+}
+
+header {
+    display: none;
+}
+
+.content-sidebar-wrap {
+    max-width: 100% !important;
+}
+
+.button-special {
+    display: inline-block;
+    width: 157px;
+    height: 58px;
+    text-align: center;
+    background-image: url(/wp-content/uploads/2017/06/button-hollow.png);
+    background-size: contain;
+    color: #FFFFFF !important;
+    font: 700 1em/58px Open Sans, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: none;
+    text-decoration: none !important;
+    border: 0;
+}
+
+.button-special:hover, .button-special:focus {
+    background-image: url(/wp-content/uploads/2017/06/button-filled.png);
+    text-decoration: none !important;
+    color: #40BAC8 !important;
+}
+
+
+/* band-header design */
+
+.band-title, .band-copy {
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0;
+}
+
+.content-band-header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.band-title {
+    flex: 1 1 100%;
+    font-size: 66px !important;
+    line-height: 1.15 !important;
+}
+
+.band-copy {
+    flex: 1 1 100%;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+
+/* Navigation band */
+
+.content-band.navigation {
+    max-width: 100%;
+}
+
+.content-band.navigation .wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.nav-summit {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-weight: 400;
+    font-family: din-2014;
+    font-size: 20px;
+}
+
+.nav-summit li {
+    flex: 1 1 auto;
+    list-style-type: none !important;
+    margin: 0;
+}
+
+.nav-summit a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #4A4D4E;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-summit .active a, .nav-summit a:hover, .nav-summit a:focus {
+    text-decoration: underline;
+}
+
+.nav-summit .home {
+    background-image: url(http://wpengine.staging.wpengine.com/wp-content/uploads/2017/06/WPE-LGO-Summit17-RGB.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex: 0 0 186px;
+    height: 36px;
+}
+
+.nav-summit .home a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-transform: uppercase;
+    text-indent: -999em;
+}
+
+.nav-summit .register {
+    flex: 2 1 auto;
+    text-align: center;
+}
+
+.nav-summit .register .button {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    clip-path: none;
+}
+
+.nav-summit .register .button:hover, .nav-summit .register .button:focus {
+    text-decoration: none;
+}
+
+.nav-summit .wpe {
+    position: relative;
+    flex: 0 0 88px;
+}
+
+.nav-summit .wpe a {
+    position: absolute;
+    display: block;
+    z-index: 99;
+    top: -10px;
+    left: 0;
+    height: 123px;
+    width: 100%;
+    background: #FFFFFF;
+    text-indent: -999em;
+    background-image: url(http://wpengine.staging.wpengine.com/wp-content/themes/wpengine/images/WPE-logo-stacked.svg);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+
+/* Intro band */
+
+.content-band.intro .wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.content-band.intro .freeform {
+    text-align: center;
+    padding-top: 120px;
+}
+
+
+.content-band.intro h1 {
+    font: 600 100px/1 'din-2014', arial;
+    color: #40BAC8;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.content-band.intro h2 {
+    font: 600 48px/1 'din-2014', arial;
+    margin-bottom: 20px;
+    text-transform: initial;
+}
+
+.content-band.intro p {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.content-band.intro .button {
+    clip-path: none;
+}
+
+
+/* About band */
+
+.skyline {
+    pointer-events: none;
+    height: 28vw;
+    max-height: 200px;
+    -webkit-mask: url(/wp-content/themes/wpengine/images/filters/austin-skyline-mask.svg) top center/90% auto no-repeat;
+    mask: url(/wp-content/themes/wpengine/images/filters/austin-skyline-mask.svg) top center/90% auto no-repeat;
+}
+
+.skyline .wrap {
+    display: none;
+}
+
+.content-band.about {
+    margin-top: -5px;
+}
+
+.content-band.about .band-title {
+    flex-grow: 0;
+}
+
+.content-band.about .band-copy {
+    font-size: 28px;
+}
+
+.content-band.skyline, .content-band.about {
+    background: #40BAC8;
+    background: linear-gradient(to right, rgba(64, 186, 200, 1) 0%, rgba(114, 197, 161, 1) 100%);
+    color: #ffffff !important;
+}
+
+.content-band.about .wrap {
+    background: none;
+}
+
+.content-band.about .band-title {
+    color: #ffffff;
+}
+
+
+/* Blocks band */
+
+.content-band.blocks {
+    margin-top: 30px;
+}
+
+.content-band.blocks .wrap {
+    width: 100%;
+    background: none;
+    margin: 0;
+}
+
+.content-band.blocks .block {
+    background-color: #ffffff;
+}
+
+.content-band.blocks .block h3 {
+    color: #eb6126;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.content-band.blocks .block p {
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+/* Best Minds */
+
+.content-band.best-minds .band-title, .content-band.best-minds p {
+    text-align: center;
+}
+
+.content-band.best-minds .band-title {
+    font-size: 48px !important;
+}
+
+.content-band.best-minds .button {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+
+/* Importance */
+
+.content-band.importance .wrap {
+    background: none;
+}
+
+.content-band.importance .band-title {
+    color: #EB6126;
+}
+
+.content-band.importance span {
+    display: block;
+}
+
+.content-band.importance .thin {
+    font-weight: 200;
+}
+
+.content-band.importance .band-copy {
+    background-color: #ffffff;
+    padding: 30px;
+    font-size: 24px;
+    font-weight: normal;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+}
+
+.content-band.old-attendees .band-title, .content-band.register .band-title {
+    color: #EB6126;
+    font-size: 48px !important;
+}
+
+.content-band.register .content-band-header {
+    padding: 30px 0 0;
+    border-top: 2px solid #40bac8;
+}
+
+.content-band.register .content-band-pieces {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.content-band.register .wpe-form {
+    flex: 0 1 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .content-band.register .content-band-header {
+        margin: 0 30px;
+    }
+    .content-band.best-minds .band-title {
+        font-size: 66px !important;
+    }
+    .content-band.register .band-copy {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content-band-header {
+        flex-wrap: nowrap;
+    }
+    .band-title {
+        text-align: right;
+        flex: 1 1 32%;
+        padding-left: 0;
+    }
+    .band-copy {
+        flex: 1 1 66%;
+        padding-right: 0;
+    }
+    .content-band.about .band-title {
+        padding-left: 0;
+    }
+    .content-band.register .wpe-form {
+        flex: 0 1 66%;
+    }
+    .skyline {
+        height: 15.5vw;
+        -webkit-mask-size: 50%;
+        mask-size: 50%;
+    }
+}
