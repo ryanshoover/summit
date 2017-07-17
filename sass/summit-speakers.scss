@@ -1,0 +1,30 @@
+// Import our base styles
+@import "core";
+@import "navigation";
+@import "subpage-title";
+
+ul.speakers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+
+    li {
+        list-style-type: none !important;
+        flex: 0 0 200px;
+        margin: 0 10px 20px;
+    }
+
+    img {
+        border-radius: 99em;
+    }
+
+    .name {
+        font: 600 21px/1.75 'Open Sans', sans-serif;
+        margin-bottom: 0;
+    }
+
+    .desc {
+        font: italic 300 16px/1.25 'Open Sans', sans-serif;
+    }
+}

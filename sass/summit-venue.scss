@@ -1,0 +1,34 @@
+// Import our base styles
+@import "core";
+@import "navigation";
+@import "subpage-title";
+// Description content band
+.content-band {
+    &.description {
+        .band-copy {
+            font: 600 32px/1.15 din-2014;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    }
+
+    &.reserve-rooms {
+        .band-copy {
+            text-align: center;
+            font-size: 26px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        a {
+            color: #40BAC8;
+            text-decoration: none;
+
+            &:focus,
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

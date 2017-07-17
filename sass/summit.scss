@@ -1,0 +1,235 @@
+// Import base styles
+@import "core";
+@import "navigation";
+
+.content-band {
+    .band-copy,
+    .band-title {
+        line-height: 1.25;
+        margin-bottom: 20px;
+    }
+
+    &.intro {
+        max-width: 100%;
+        background: #40BAC8;
+        background-image: url("/wp-content/uploads/2017/07/SUMMIT-AustinSkyline-white.png"), linear-gradient(to right, rgba(64, 186, 200, 1) 0%, rgba(114, 197, 161, 1) 100%);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+
+        .wrap {
+            padding-bottom: 200px;
+        }
+
+        .freeform {
+            text-align: center;
+            padding-top: 120px;
+        }
+
+        h1,
+        h2 {
+            margin: 20px 0;
+            font-weight: 600;
+            font-family: 'din-2014', arial;
+            line-height: 1;
+        }
+
+        h1 {
+            font-size: 20vw;
+            color: #FFFFFF;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 36px;
+            text-transform: initial;
+        }
+
+        p {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &.about {
+        position: relative;
+        max-width: 100%;
+        margin-top: -2px;
+        background: #FFFFFF;
+
+        .band-copy {
+            text-align: center;
+            font-size: 28px;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 775px;
+        }
+
+        .button {
+            clip-path: none;
+        }
+    }
+
+    &.about {
+        .wrap {
+            background: none;
+        }
+
+        .band-title {
+            color: #ffffff;
+        }
+    }
+
+    &.blocks {
+        margin-top: 30px;
+
+        .wrap {
+            width: 100%;
+            background: none;
+            margin: 0;
+        }
+
+        .block {
+            background-color: #ffffff;
+            clip-path: none;
+
+            h3 {
+                color: #eb6126;
+                font-size: 2.5em;
+                font-weight: 300;
+            }
+
+            p {
+                font-size: 24px;
+                line-height: 1.25;
+            }
+        }
+    }
+
+    &.importance,
+    &.what-to-expect,
+    &.who-is-coming {
+        .band-title {
+            font-size: 66px;
+        }
+
+        .band-copy {
+            font-size: 24px;
+            font-weight: normal;
+        }
+    }
+
+    &.importance {
+        .wrap {
+            background: none;
+        }
+
+        .band-title {
+            color: #EB6126;
+        }
+
+        span {
+            display: block;
+        }
+
+        .thin {
+            font-weight: 200;
+        }
+
+        .band-copy {
+            background-color: #ffffff;
+            padding: 30px;
+            clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+            -webkit-clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+        }
+    }
+
+    &.best-minds {
+        padding-top: 80px;
+
+        .band-title,
+        p {
+            text-align: center;
+        }
+
+        .band-title {
+            font-size: 32px;
+        }
+    }
+
+    &.register {
+        .content-band-pieces {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+        }
+
+        .content-band-header {
+            padding: 30px 0 0;
+            border-top: 2px solid #40bac8;
+        }
+
+        .band-title {
+            color: #EB6126;
+            font-size: 48px !important;
+        }
+
+        .band-copy {
+            font-weight: 300;
+        }
+
+        .wpe-form {
+            flex: 0 1 100%;
+            max-width: 100%;
+        }
+    }
+    @media (min-width: 550px) {
+        &.intro {
+            h1 {
+                font-size: 100px;
+            }
+        }
+
+        &.best-minds {
+            .band-title {
+                font-size: 48px;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        &.register .content-band-header {
+            margin: 0 30px;
+        }
+
+        &.best-minds .band-title {
+            font-size: 66px !important;
+        }
+
+        &.register .band-copy {
+            font-size: 48px;
+        }
+    }
+    @media (min-width: 1024px) {
+        .content-band-header {
+            flex-wrap: nowrap;
+        }
+
+        .band-title {
+            text-align: right;
+            flex: 1 1 32%;
+            padding-left: 0;
+        }
+
+        .band-copy {
+            flex: 1 1 66%;
+            padding-right: 0;
+        }
+
+        &.about .band-title {
+            padding-left: 0;
+        }
+
+        &.register .wpe-form {
+            flex: 0 1 66%;
+        }
+    }
+}

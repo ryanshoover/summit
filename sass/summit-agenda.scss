@@ -1,0 +1,54 @@
+// Import our base styles
+@import "core";
+@import "navigation";
+@import "subpage-title";
+// Daily Agenda
+.content-band {
+    &.day1,
+    &.day2,
+    &.day3 {
+        .content-band-header {
+            border-bottom: 5px solid #40BAC8;
+        }
+
+        .band-title {
+            font: 600 32px/1 'din-2014';
+            text-transform: uppercase;
+            text-align: center;
+            color: #162A33;
+            padding: 0;
+            margin-bottom: 10px;
+            @media (min-width: 768px ) {
+                margin-left: 35%;
+                text-align: left;
+            }
+        }
+    }
+}
+
+dl {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    font-size: 18px;
+}
+
+dt {
+    flex: 0 0 100%;
+    color: #162A33;
+    font-weight: 600;
+    margin-bottom: 10px;
+    @media (min-width: 768px) {
+        flex-basis: 32%;
+        margin-right: 3%;
+        text-align: right;
+    }
+}
+
+dd {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+        flex-basis: 65%;
+    }
+}

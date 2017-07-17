@@ -1,0 +1,34 @@
+body {
+    padding-top: 0 !important;
+}
+
+header {
+    display: none;
+}
+
+.content-sidebar-wrap {
+    max-width: 100% !important;
+}
+
+/* band-header design */
+.content-band-header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.band-copy,
+.band-title {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0;
+}
+
+.content-band-row.freeform {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.wpe-form .wpe-field {
+    overflow: hidden;
+}

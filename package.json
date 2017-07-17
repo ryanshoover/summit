@@ -1,0 +1,28 @@
+{
+  "name": "summit",
+  "version": "1.0.0",
+  "description": "CSS for the Summit 2017 micro-site",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-sass": "^3.1.0",
+    "sass-convert": "^0.5.2",
+    "sassdoc": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "run": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanshoover/summit.git"
+  },
+  "author": "Ryan Hoover",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ryanshoover/summit/issues"
+  },
+  "homepage": "https://github.com/ryanshoover/summit#readme"
+}

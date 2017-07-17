@@ -1,0 +1,22 @@
+.content-band {
+    &.title {
+        position: relative;
+        max-width: 100%;
+        background: #40BAC8;
+        background-image: url("/wp-content/uploads/2017/07/SUMMIT-AustinSkyline-alpha.png"), linear-gradient(to right, rgba(64, 186, 200, 1) 0%, rgba(114, 197, 161, 1) 100%);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+
+        .wrap {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .band-title {
+            margin: 0;
+            font-size: 60px;
+            color: #FFFFFF;
+            white-space: nowrap;
+        }
+    }
+}
