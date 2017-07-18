@@ -15,8 +15,9 @@ ul.speakers {
         margin: 0 15px 20px;
 
         &.featured {
-            flex-basis: 250px;
-            margin: 0 10px 40px;
+            .name {
+                color: #40BAC8;
+            }
         }
     }
 
@@ -28,6 +29,8 @@ ul.speakers {
     .name {
         font: 600 21px/1.75 'Open Sans', sans-serif;
         margin-bottom: 0;
+        text-transform: uppercase;
+        white-space: nowrap;
     }
 
     .desc {
