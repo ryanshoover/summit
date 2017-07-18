@@ -32,3 +32,11 @@ header {
 .wpe-form .wpe-field {
     overflow: hidden;
 }
+
+#livechat-status, #livechat-segmenation, #livechat-full {
+    position: absolute;
+    left: -9999em !important;
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+}
