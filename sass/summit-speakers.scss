@@ -12,10 +12,16 @@ ul.speakers {
     li {
         list-style-type: none !important;
         flex: 0 0 200px;
-        margin: 0 10px 20px;
+        margin: 0 15px 20px;
+
+        &.featured {
+            flex-basis: 250px;
+            margin: 0 10px 40px;
+        }
     }
 
     img {
+        width: 100%;
         border-radius: 99em;
     }
 

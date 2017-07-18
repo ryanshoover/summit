@@ -23,6 +23,22 @@
                 text-align: left;
             }
         }
+
+        ul {
+            margin-bottom: 0;
+        }
+
+        li {
+            font-weight: 300;
+            text-transform: initial;
+            list-style-type: none;
+
+            &::before {
+                content: '\2013';
+                margin-left: -19px;
+                margin-right: 10px;
+            }
+        }
     }
 }
 
@@ -48,6 +64,9 @@ dt {
 dd {
     flex: 0 0 100%;
     margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+
     @media (min-width: 768px) {
         flex-basis: 65%;
     }
